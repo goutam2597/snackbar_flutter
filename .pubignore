@@ -1,0 +1,12 @@
+# Ignore web demo build (for GitHub Pages only)
+docs/
+
+# Ignore structure documentation files
+STRUCTURE.md
+RESTRUCTURE_SUMMARY.md
+
+# Ignore example build files
+example/build/
+example/.dart_tool/
+example/.flutter-plugins
+example/.flutter-plugins-dependencies
