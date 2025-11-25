@@ -14,34 +14,6 @@ Test all 24 snackbar styles in your browser! The demo includes:
 - 🎭 Customizable colors, positions, and dismiss directions
 - ⚙️ All configuration options
 
-## 📁 Package Structure
-
-The package is organized with clean separation of concerns:
-
-```
-lib/
-├── snackbar_flutter.dart          # Main library export file
-└── src/
-    ├── custom_snackbar.dart        # Main CustomSnackBar class
-    ├── enums/
-    │   ├── snackbar_type.dart      # Type enums (success, error, etc.)
-    │   ├── snackbar_position.dart  # Position enums (top, bottom)
-    │   └── snackbar_style.dart     # Style enums (24 styles)
-    ├── widgets/
-    │   └── snackbar_widget.dart    # Main snackbar widget with animations
-    ├── styles/
-    │   ├── all_styles.dart         # All 24 style implementations
-    │   └── style_factory.dart      # Factory to build styles
-    ├── painters/
-    │   ├── bubble_tail_painter.dart
-    │   ├── stripe_painter.dart
-    │   └── dot_pattern_painter.dart
-    ├── clippers/
-    │   └── diagonal_clipper.dart
-    └── utils/
-        └── snackbar_helpers.dart   # Helper methods for colors/icons/titles
-```
-
 ## ✨ Features
 
 - 🎨 **24+ Pre-built Styles**: Classic, Frosted, Minimal, Gradient, Floating, Material You, iOS, Outlined, Compact, Expanded, Icon Only, Neon, Neumorphic, Card, Pill, Banner, Grunge, Bubble, Striped, Pixel, Glass, 3D, Dotted, and Diagonal

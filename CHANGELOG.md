@@ -1,3 +1,12 @@
+## 1.0.2
+
+* 🎨 **UI Improvements:**
+  - Fixed web demo frame overflow - snackbar now stays within iPhone frame
+  - Made demo page fully scrollable for better UX on small screens
+  - Improved Navigator context for proper overlay rendering
+  - Removed Bengali text from example app
+  - Removed package structure from README for cleaner documentation
+
 ## 1.0.1
 
 * 🐛 **Bug Fixes:**

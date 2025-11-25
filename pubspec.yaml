@@ -1,6 +1,6 @@
 name: snackbar_flutter
 description: A highly customizable Flutter package for beautiful snackbar notifications with 24+ pre-built styles including gradient, glassmorphism, neon, neumorphic, and more.
-version: 1.0.1
+version: 1.0.2
 homepage: https://goutam.uk/snackbar_flutter/
 repository: https://github.com/goutam2597/snackbar_flutter
 issue_tracker: https://github.com/goutam2597/snackbar_flutter/issues

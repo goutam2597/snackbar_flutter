@@ -37,7 +37,11 @@ class DeviceFrame extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(47),
-                  child: Material(color: Colors.white, child: child),
+                  child: Navigator(
+                    onGenerateRoute: (settings) => MaterialPageRoute(
+                      builder: (context) => child,
+                    ),
+                  ),
                 ),
               ),
             ),

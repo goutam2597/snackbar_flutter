@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SnackBarDemoPage(),
+      home: const DeviceFrame(child: SnackBarDemoPage()),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -189,23 +189,23 @@ class _SnackBarDemoPageState extends State<SnackBarDemoPage> {
 
   @override
   Widget build(BuildContext context) {
-    return DeviceFrame(
-      child: Scaffold(
-        backgroundColor: Colors.grey[100],
-        appBar: AppBar(
-          title: const Text(
-            'Snackbar Flutter Demo',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          elevation: 0,
+    return Scaffold(
+      backgroundColor: Colors.grey[100],
+      appBar: AppBar(
+        title: const Text(
+          'Snackbar Flutter Demo',
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        body: Column(
-          children: [
-            // Controls
-            Container(
-              padding: const EdgeInsets.all(16),
-              color: Colors.white,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        elevation: 0,
+      ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Controls
+              Container(
+                padding: const EdgeInsets.all(16),
+                color: Colors.white,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -273,8 +273,8 @@ class _SnackBarDemoPageState extends State<SnackBarDemoPage> {
                             ),
                             Text(
                               _replaceExisting
-                                  ? 'একটার পর একটা (পুরাতন সরে যাবে)'
-                                  : 'একসাথে multiple দেখাবে',
+                                  ? 'One at a time (replaces previous)'
+                                  : 'Multiple snackbars allowed',
                               style: TextStyle(
                                 fontSize: 11,
                                 color: Colors.grey[600],
@@ -433,9 +433,10 @@ class _SnackBarDemoPageState extends State<SnackBarDemoPage> {
             ),
             const Divider(height: 1),
             // Styles Grid
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.all(16),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     '24 Different Styles',
